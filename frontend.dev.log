@@ -1,0 +1,738 @@
+
+> frontend@0.0.0 dev
+> vite
+
+
+  VITE v7.1.3  ready in 107 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+1:57:19 PM [vite] (client) hmr update /src/App.tsx
+1:57:26 PM [vite] (client) hmr update /src/App.tsx
+2:00:50 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:00:58 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:05:41 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:05:53 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:09:01 PM [vite] (client) hmr update /src/App.tsx, /src/components/Header.tsx, /src/components/ActivityFeed.tsx
+2:09:06 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:09:30 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:09:40 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:09:40 PM [vite] (client) hmr update /src/App.tsx, /src/components/Header.tsx, /src/components/ActivityFeed.tsx
+2:09:40 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:14:58 PM [vite] http proxy error: /api/activities
+Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:598:25)
+    at Socket.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2:16:44 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:16:44 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (121:25)
+
+  119 |                     </Stack>
+  120 |                     {!chatOpenById[itemId] ? null : (
+> 121 |                     {msgs.length > 0 && (
+      |                          ^
+  122 |                       <Stack spacing={0.5}>
+  123 |                         {msgs.map((m, i) => (
+  124 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:121:25
+  119 |                      </Stack>
+  120 |                      {!chatOpenById[itemId] ? null : (
+  121 |                      {msgs.length > 0 && (
+      |                           ^
+  122 |                        <Stack spacing={0.5}>
+  123 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:17:00 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:17:00 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (121:25)
+
+  119 |                     </Stack>
+  120 |                     {!chatOpenById[itemId] ? null : (
+> 121 |                     {msgs.length > 0 && (
+      |                          ^
+  122 |                       <Stack spacing={0.5}>
+  123 |                         {msgs.map((m, i) => (
+  124 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:121:25
+  119 |                      </Stack>
+  120 |                      {!chatOpenById[itemId] ? null : (
+  121 |                      {msgs.length > 0 && (
+      |                           ^
+  122 |                        <Stack spacing={0.5}>
+  123 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:17:17 PM [vite] (client) Pre-transform error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (121:25)
+
+  119 |                     </Stack>
+  120 |                     {!chatOpenById[itemId] ? null : (
+> 121 |                     {msgs.length > 0 && (
+      |                          ^
+  122 |                       <Stack spacing={0.5}>
+  123 |                         {msgs.map((m, i) => (
+  124 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:121:25
+  119 |                      </Stack>
+  120 |                      {!chatOpenById[itemId] ? null : (
+  121 |                      {msgs.length > 0 && (
+      |                           ^
+  122 |                        <Stack spacing={0.5}>
+  123 |                          {msgs.map((m, i) => (
+2:17:17 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (121:25)
+
+  119 |                     </Stack>
+  120 |                     {!chatOpenById[itemId] ? null : (
+> 121 |                     {msgs.length > 0 && (
+      |                          ^
+  122 |                       <Stack spacing={0.5}>
+  123 |                         {msgs.map((m, i) => (
+  124 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:121:25
+  119 |                      </Stack>
+  120 |                      {!chatOpenById[itemId] ? null : (
+  121 |                      {msgs.length > 0 && (
+      |                           ^
+  122 |                        <Stack spacing={0.5}>
+  123 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:18:01 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:18:01 PM [vite] (client) Pre-transform error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (124:25)
+
+  122 |                     </Stack>
+  123 |                     {!chatOpenById[itemId] ? null : (
+> 124 |                     {msgs.length > 0 && (
+      |                          ^
+  125 |                       <Stack spacing={0.5}>
+  126 |                         {msgs.map((m, i) => (
+  127 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:124:25
+  122 |                      </Stack>
+  123 |                      {!chatOpenById[itemId] ? null : (
+  124 |                      {msgs.length > 0 && (
+      |                           ^
+  125 |                        <Stack spacing={0.5}>
+  126 |                          {msgs.map((m, i) => (
+2:18:01 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (124:25)
+
+  122 |                     </Stack>
+  123 |                     {!chatOpenById[itemId] ? null : (
+> 124 |                     {msgs.length > 0 && (
+      |                          ^
+  125 |                       <Stack spacing={0.5}>
+  126 |                         {msgs.map((m, i) => (
+  127 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:124:25
+  122 |                      </Stack>
+  123 |                      {!chatOpenById[itemId] ? null : (
+  124 |                      {msgs.length > 0 && (
+      |                           ^
+  125 |                        <Stack spacing={0.5}>
+  126 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:18:12 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:18:12 PM [vite] (client) Pre-transform error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (124:25)
+
+  122 |                     </Stack>
+  123 |                     {!chatOpenById[itemId] ? null : (
+> 124 |                     {msgs.length > 0 && (
+      |                          ^
+  125 |                       <Stack spacing={0.5}>
+  126 |                         {msgs.map((m, i) => (
+  127 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:124:25
+  122 |                      </Stack>
+  123 |                      {!chatOpenById[itemId] ? null : (
+  124 |                      {msgs.length > 0 && (
+      |                           ^
+  125 |                        <Stack spacing={0.5}>
+  126 |                          {msgs.map((m, i) => (
+2:18:12 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (124:25)
+
+  122 |                     </Stack>
+  123 |                     {!chatOpenById[itemId] ? null : (
+> 124 |                     {msgs.length > 0 && (
+      |                          ^
+  125 |                       <Stack spacing={0.5}>
+  126 |                         {msgs.map((m, i) => (
+  127 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:124:25
+  122 |                      </Stack>
+  123 |                      {!chatOpenById[itemId] ? null : (
+  124 |                      {msgs.length > 0 && (
+      |                           ^
+  125 |                        <Stack spacing={0.5}>
+  126 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:18:50 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:18:50 PM [vite] (client) Pre-transform error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+2:18:50 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:19:04 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:19:04 PM [vite] (client) Pre-transform error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+2:19:05 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:19:10 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:23:01 PM [vite] Internal server error: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx: Unexpected token, expected "," (127:25)
+
+  125 |                     </Stack>
+  126 |                     {!chatOpenById[itemId] ? null : (
+> 127 |                     {msgs.length > 0 && (
+      |                          ^
+  128 |                       <Stack spacing={0.5}>
+  129 |                         {msgs.map((m, i) => (
+  130 |                           <Stack key={i} direction="row" spacing={1} alignItems="center">
+  Plugin: vite:react-babel
+  File: /Users/peterliu/Athlete Buddy V5/frontend/src/components/ActivityFeed.tsx:127:25
+  125 |                      </Stack>
+  126 |                      {!chatOpenById[itemId] ? null : (
+  127 |                      {msgs.length > 0 && (
+      |                           ^
+  128 |                        <Stack spacing={0.5}>
+  129 |                          {msgs.map((m, i) => (
+      at constructor (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at TypeScriptParserMixin.unexpected (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at TypeScriptParserMixin.expect (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at TypeScriptParserMixin.parseObjectLike (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11826:14)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11339:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12499:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11679:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9857:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10893:29)
+      at TypeScriptParserMixin.parseConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9631:18)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10885:17)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:9806:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10784:23)
+      at /Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:12432:12)
+      at TypeScriptParserMixin.parseExpression (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:10780:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/peterliu/Athlete Buddy V5/frontend/node_modules/@babel/parser/lib/index.js:11046:23)
+2:24:35 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:24:43 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:27:36 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:28:12 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:28:21 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:34:55 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:35:24 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:35:35 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:35:57 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:36:09 PM [vite] (client) hmr update /src/components/RoutePreview.tsx
+2:36:09 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:36:09 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:38:23 PM [vite] (client) hmr update /src/components/RoutePreview.tsx
+2:38:31 PM [vite] (client) hmr update /src/components/RoutePreview.tsx
+2:43:18 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:43:29 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx
+2:43:53 PM [vite] (client) hmr update /src/components/ActivityFeed.tsx

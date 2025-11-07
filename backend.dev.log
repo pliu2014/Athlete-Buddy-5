@@ -1,0 +1,139 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+127.0.0.1 - - [03/Oct/2025 13:51:57] "[31m[1mGET /api/preferences HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:51:57] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:51:57] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:51:57] "[31m[1mGET /api/preferences HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:17] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:18] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:19] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:20] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:23] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:23] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:23] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:23] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:26] "[31m[1mGET /api/auth/strava/start HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:33] "[31m[1mGET /api/preferences HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:33] "[31m[1mGET /api/preferences HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:42] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:43] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:52:44] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:54:15] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:54:15] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:54:15] "[31m[1mGET /api/feed HTTP/1.1[0m" 401 -
+127.0.0.1 - - [03/Oct/2025 13:54:15] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:54:45] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:54:45] "GET /api/integrations/strava HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:59:50] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 13:59:51] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:00:14] "POST /api/auth/google HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:05:51] "GET /api/feed HTTP/1.1" 200 -
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+127.0.0.1 - - [03/Oct/2025 14:24:37] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:24:37] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:24:46] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:24:48] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:24:49] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:24:49] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:25:31] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:25:34] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:25:51] "POST /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:29:09] "POST /api/auth/google HTTP/1.1" 200 -
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+127.0.0.1 - - [03/Oct/2025 14:35:30] "GET /api/activities HTTP/1.1" 200 -
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+127.0.0.1 - - [03/Oct/2025 14:37:36] "POST /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:42:42] "POST /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:42:50] "GET /api/chat/1759516962907 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 14:43:27] "GET /api/activities HTTP/1.1" 200 -
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+ * Detected change in '/Users/peterliu/Athlete Buddy V5/backend/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 338-392-825
+127.0.0.1 - - [03/Oct/2025 15:04:36] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:04:36] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:04:46] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:04:48] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:04:49] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:04:49] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:07:54] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:07:57] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:19:41] "[35m[1mGET /api/integrations/strava HTTP/1.1[0m" 500 -
+127.0.0.1 - - [03/Oct/2025 15:19:44] "[35m[1mGET /api/integrations/strava HTTP/1.1[0m" 500 -
+127.0.0.1 - - [03/Oct/2025 15:19:59] "POST /api/auth/google HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:20:32] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:20:35] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:02] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:03] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:12] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:13] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:13] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 15:34:15] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:04:27] "GET /api/geocode?q=08002 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:04:28] "GET /api/forecast?lat=41.38879&lon=2.15899&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:04:58] "GET /api/geocode?q=cherry%20hill,%20nj HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:04:59] "GET /api/forecast?lat=39.93484&lon=-75.03073&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:05:36] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:05:39] "GET /api/activities HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:06:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:06:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:36:17] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:36:18] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 19:36:18] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [03/Oct/2025 20:01:17] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 16:33:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 16:33:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 17:07:21] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 17:07:22] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 17:07:22] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [13/Oct/2025 17:08:25] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:43] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:43] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:51] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:53] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:53] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 08:40:55] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 09:51:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 09:51:09] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 10:10:04] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 10:10:06] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 10:10:06] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 10:44:47] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2025 15:14:23] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2025 15:14:32] "GET /api/preferences HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2025 15:14:33] "GET /api/geocode?q=Philadelphia,%20PA HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2025 15:14:34] "GET /api/forecast?lat=39.95238&lon=-75.16362&units=imperial HTTP/1.1" 200 -
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
